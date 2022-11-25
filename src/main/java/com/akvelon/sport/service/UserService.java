@@ -18,6 +18,6 @@ public class UserService {
 
     public User getUserById (Long id) {
         return new User(2L, "Mateusz", "Wojtas", "123454", "sdasd@asdas.com",
-                "krakow", "urlforimahge");
+                "krakow", "https://upcdn.io/12a1xsp/raw/uploads/2022/11/25/Vladysalv%20Bieliaiev-4nbm.png");
     }
 }
