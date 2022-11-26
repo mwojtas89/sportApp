@@ -12,7 +12,7 @@ public class UserService {
     private final UserRepository userRepository;
 
     public User addUser (UserDto userDto) {
-        return userRepository.save(new User(null, userDto.getName(), userDto.getLastName(), userDto.getPassword(),
+        return userRepository.save(new User(userDto.getId(), userDto.getName(), userDto.getLastName(), userDto.getPassword(),
                 userDto.getEmail(), userDto.getLocation(), userDto.getImage()));
     }
 
